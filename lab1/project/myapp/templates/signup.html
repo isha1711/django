@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>SignUp Form form</title>
+</head>
+<body>
+<form action="/" method="POST">
+	{% csrf_token %}
+	<table align="center">
+		<tr>
+			<td>
+				Firstname :
+			</td>
+			<td>
+				<input type="text" name="fname">
+			</td>
+		</tr>
+
+		<tr>
+			<td>
+				Lastname :
+			</td>
+			<td>
+				<input type="text" name="lname">
+			</td>
+		</tr>
+
+		<tr>
+			<td>
+				Email :
+			</td>
+			<td>
+				<input type="email" name="email">
+			</td>
+		</tr>
+
+		<tr>
+			<td>
+				Password :
+			</td>
+			<td>
+				<input type="password" name="Pas">
+			</td>
+		</tr>
+
+		<tr>
+			<td>
+				Confirm Password :
+			</td>
+			<td>
+				<input type="password" name="cpas">
+			</td>
+		</tr>
+
+		<tr>
+			<td colspan=2 align="center">
+				<input type="submit" name="submit">
+			</td>
+		</tr>
+		<tr align="center">
+			<td colspan="2">
+			
+			</td>	
+		</tr>
+	</table>
+</form>
+</body> 
+</html>
