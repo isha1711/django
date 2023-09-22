@@ -1,0 +1,20 @@
+<center>
+	<form action="/saveview/">
+		<label for="search">Search:</label>
+		<input type="search" name="sname"><br>
+		<input type="submit" value="go">
+	</form>
+</center>
+<table border=3>
+		<tr>
+			<td>PName<td>PBrand<td>PPrice<td>Stock
+		</tr>
+
+		{% for d in Data %}
+		
+		<tr>
+			<td>{{d.PName}}<td>{{d.PBrand}}<td>{{d.PPrice}}<td>{{d.Stock}}
+		</tr>
+
+		{% endfor %}
+	</table>
